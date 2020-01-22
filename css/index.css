@@ -185,10 +185,8 @@ header div.tagline-container {
   flex-wrap: wrap;
 }
 header .header-content {
-  width: 25%;
+  width: 40%;
   font-family: 'Roboto', sans-serif;
-}
-header .header-content {
   margin: 2% 0;
 }
 header #cta-btn {
@@ -200,6 +198,9 @@ header #cta-btn {
   color: seashell;
   background-color: forestgreen;
   margin: 4% 0;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
 }
 @media (max-width: 767px) {
   header div.tagline-container h1 {
