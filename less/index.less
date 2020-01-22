@@ -55,6 +55,73 @@ table {
 
 html, body {
 	height: 100%;
-	background-color: red;
+	 //background-color: red;
 }
+
+
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+  /* variables */
+  @primary-color:skyblue;
+  @secondary-color:forestgreen;
+  @whiteText-color:seashell;
+  @main-font: 'Roboto', sans-serif;
+
+/* mix-ins */
+
+.flex-row(){
+	display: flex;
+}
+
+.flex-column(){
+	flex-direction: column;
+}
+.center(){
+	display:flex;
+	justify-content: center;
+  }
+
+
+
+  /* general styles */
+  
+ 
+  main{
+	  margin: 1.5%;
+  }
+
+  /* Header styles */
+  header{
+	  .flex-row();
+	  flex-wrap: wrap;
+	background-color:@primary-color;
+	padding: 2%;
+	h1{
+		font-size: 3em;
+		font-family: 'Roboto', sans-seriff;
+	}
+  
+		
+		img{
+			max-width: 48%;
+			margin-right: 2%;
+		}
+
+		
+
+  }//end header
+
+/* Content styles */
+
+#cta-btn {
+	color:@whiteText-color;
+	background-color:@secondary-color;
+}
+
+/* Footer styles */
+
+
+
+
 
