@@ -1,1 +1,281 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+/* variables */
+/* mix-ins */
+/* general styles */
+body {
+  max-width: 960px;
+  margin: auto;
+}
+main {
+  margin: 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: azure;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+/* Header styles */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: skyblue;
+  padding: 2%;
+}
+header nav {
+  width: 100%;
+  margin: 4% 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav a {
+  color: darkslategray;
+}
+header .phone-link {
+  font-size: 2rem;
+}
+header h1 {
+  font-size: 3em;
+  font-family: 'Roboto', sans-seriff;
+}
+header .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  border: 1px solid grey;
+  max-width: 40%;
+  margin-right: 6%;
+}
+header div.tagline-container {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header .header-content {
+  width: 40%;
+  font-family: 'Roboto', sans-serif;
+  margin: 2% 0;
+}
+header #cta-btn {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: none;
+  padding: 2%;
+  width: 100%;
+  color: seashell;
+  background-color: forestgreen;
+  margin: 4% 0;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+@media (max-width: 767px) {
+  header div.tagline-container h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .header-content {
+    width: 100%;
+  }
+  header .row {
+    display: flex;
+    flex-direction: column;
+  }
+  header div.tagline-container {
+    width: 90%;
+    margin: 4% 0;
+  }
+}
+/* Content styles */
+#content-1 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 4%;
+}
+#content-1 h2 {
+  margin-bottom: 4%;
+  font-weight: bolder;
+}
+#content-1 article.article {
+  width: 60%;
+}
+#content-1 article.list ul li {
+  margin: 10%;
+  list-style-type: square;
+}
+@media (max-width: 550px) {
+  #content-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #content-1 article {
+    margin: 4% 0;
+  }
+}
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: skyblue;
+  width: 100%;
+}
+footer p {
+  color: seashell;
+  font-family: 'Roboto', sans-serif;
+  margin: 1.5%;
+}
